@@ -1,0 +1,87 @@
+================================================================================
+                     GITHUB QUICK REFERENCE
+================================================================================
+
+YOUR GITHUB LINK WILL BE:
+   https://github.com/YOUR_USERNAME/health-chatbot
+
+================================================================================
+                    COPY & PASTE COMMANDS
+================================================================================
+
+Run these commands in order in PowerShell:
+
+# Step 1: Navigate to project
+cd D:\project\health-chatbot
+
+# Step 2: Initialize git (only first time)
+git init
+
+# Step 3: Add all files
+git add .
+
+# Step 4: Create first commit
+git commit -m "Initial commit - Health Chatbot with Django and ChatterBot"
+
+# Step 5: Rename branch to main
+git branch -M main
+
+# Step 6: Add GitHub remote (REPLACE YOUR_USERNAME!)
+git remote add origin https://github.com/YOUR_USERNAME/health-chatbot.git
+
+# Step 7: Push to GitHub
+git push -u origin main
+
+================================================================================
+                    GITHUB SETUP CHECKLIST
+================================================================================
+
+□ Git installed? 
+  Run: git --version
+  Download from: https://git-scm.com/download/win if needed
+
+□ GitHub account created?
+  Sign up at: https://github.com/signup
+
+□ GitHub repository created?
+  Go to: https://github.com/new
+  Name: health-chatbot
+  Make it: PUBLIC
+  Click: Create repository
+
+□ Git configured?
+  git config --global user.name "Your Name"
+  git config --global user.email "your-email@github.com"
+
+□ Files pushed?
+  Follow the "Copy & Paste Commands" above
+
+□ Verified on GitHub?
+  Visit: https://github.com/YOUR_USERNAME/health-chatbot
+
+================================================================================
+                    WHERE TO FIND YOUR LINK
+================================================================================
+
+After pushing to GitHub:
+
+1. Go to: https://github.com/YOUR_USERNAME/health-chatbot
+2. You'll see your repository
+3. Green "Code" button shows clone link
+4. Share the main URL: https://github.com/YOUR_USERNAME/health-chatbot
+
+================================================================================
+                        AFTER GITHUB
+================================================================================
+
+Next: Deploy from GitHub using:
+  - Railway (recommended): https://railway.app
+  - Render: https://render.com  
+  - Heroku: https://heroku.com
+
+This will give you a deployed link like:
+  https://health-chatbot.up.railway.app
+  https://health-chatbot.onrender.com
+  https://health-chatbot.herokuapp.com
+
+================================================================================

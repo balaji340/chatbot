@@ -1,0 +1,97 @@
+# Health Chatbot - Ready for Deployment
+
+Your Django health chatbot is now configured and ready for deployment!
+
+## Quick Start Options
+
+### Option 1: Deploy on Railway (Recommended - Free)
+**Steps:**
+1. Go to: https://railway.app
+2. Sign in with GitHub
+3. Click "New Project" → "Deploy from GitHub repo"
+4. Select your repository (you'll need to push to GitHub first)
+5. Railway auto-detects Django configuration
+6. Add environment variables from Railway dashboard
+
+**Your link will be:** `https://your-app.up.railway.app`
+
+### Option 2: Deploy on Render
+**Steps:**
+1. Go to: https://render.com
+2. Click "New+" → "Web Service"
+3. Connect GitHub repository
+4. Build command: `pip install -r requirements.txt && python manage.py migrate && python manage.py collectstatic --noinput`
+5. Start command: `gunicorn django_chatbot_project.wsgi:application`
+
+**Your link will be:** `https://your-app.onrender.com`
+
+### Option 3: Deploy on Heroku
+**Steps:**
+1. Install Heroku CLI
+2. Run: `heroku login`
+3. Run: `heroku create your-app-name`
+4. Run: `git push heroku main`
+
+**Your link will be:** `https://your-app-name.herokuapp.com`
+
+## Files Added for Deployment
+
+✅ **Procfile** - Deployment configuration
+✅ **requirements.txt** - Python dependencies
+✅ **runtime.txt** - Python version specification
+✅ **settings.py** - Updated for production
+✅ **.gitignore** - Deployment-safe file filtering
+
+## Environment Variables to Set
+
+When deploying, add these variables:
+
+```
+DEBUG=False
+SECRET_KEY=<generate-a-random-key>
+ALLOWED_HOSTS=<your-domain>
+```
+
+## Before Pushing to GitHub
+
+Run these commands:
+```bash
+python manage.py collectstatic --noinput
+python manage.py test
+```
+
+## Current Local Status
+
+✅ Server running at: http://127.0.0.1:8000
+✅ Database configured: SQLite (local), auto-switches to PostgreSQL on deployment
+✅ Static files configured with WhiteNoise
+✅ All dependencies in requirements.txt
+
+## Next Steps
+
+1. **Create GitHub Repository**: Visit https://github.com/new
+2. **Initialize Git**:
+   - Open Git Bash in your project folder
+   - Run: `git init`
+   - Run: `git add .`
+   - Run: `git commit -m "Initial commit"`
+   - Run: `git remote add origin https://github.com/YOUR-USERNAME/health-chatbot.git`
+   - Run: `git push -u origin main`
+
+3. **Deploy**: Follow one of the deployment options above
+
+4. **Share Your Link**: Once deployed, share the generated URL!
+
+## Getting a Random Secret Key for Production
+
+You can generate one with Python:
+```python
+python -c 'from django.core.management.utils import get_random_secret_key; print(get_random_secret_key())'
+```
+
+---
+
+**Status**: ✅ Ready for deployment
+**Framework**: Django 4.2.20
+**Python**: 3.11+
+**Main App**: http://127.0.0.1:8000 (local)

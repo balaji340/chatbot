@@ -1,0 +1,12 @@
+What is the difference between analog and digital signals?
+Analog signals represent data in a continuous wave, while digital signals use discrete values, typically 0s and 1s, to represent data.
+What does CPU stand for in computers?
+CPU stands for Central Processing Unit, which is the brain of the computer, responsible for executing instructions.
+What is an LED?
+LED stands for Light Emitting Diode. It's a semiconductor device that emits light when current flows through it.
+How can I extend my smartphone battery life?
+You can extend battery life by lowering screen brightness, turning off unused apps, and enabling power-saving modes.
+What does mAh mean in a battery?
+mAh stands for milliampere-hour and is a unit used to measure a battery's capacity. A higher mAh value generally means the battery can last longer.
+Why does my device overheat when charging?
+Overheating can happen if the charging cable or adapter is damaged, the device is running multiple heavy applications, or the device is in a hot environment. Try charging in a cooler, well-ventilated space.

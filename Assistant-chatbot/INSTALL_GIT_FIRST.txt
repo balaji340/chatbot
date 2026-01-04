@@ -1,0 +1,105 @@
+================================================================================
+                        GIT NOT INSTALLED
+================================================================================
+
+The system doesn't have Git installed, which is required to push to GitHub.
+
+================================================================================
+                    INSTALL GIT FIRST
+================================================================================
+
+1. DOWNLOAD GIT FOR WINDOWS
+   https://git-scm.com/download/win
+
+2. RUN THE INSTALLER
+   - Double-click Git-2.x.x-64-bit.exe
+   - Click through all prompts
+   - Use default settings
+   - Click "Install"
+   - Click "Finish"
+
+3. RESTART POWERSHELL
+   - Close PowerShell completely
+   - Open a new PowerShell window
+
+4. VERIFY INSTALLATION
+   Run: git --version
+   (Should show: git version 2.x.x.windows.x)
+
+================================================================================
+                    AFTER INSTALLING GIT
+================================================================================
+
+Come back and run these commands in PowerShell:
+
+Step 1: Navigate to project
+   cd D:\project\health-chatbot
+
+Step 2: Configure git user (first time only)
+   git config user.email "your-email@gmail.com"
+   git config user.name "Your Name"
+
+Step 3: Initialize repository
+   git init
+
+Step 4: Add all files
+   git add .
+
+Step 5: Create initial commit
+   git commit -m "Initial commit - Health Chatbot with Django and ChatterBot"
+
+Step 6: Rename to main branch
+   git branch -M main
+
+Step 7: Add GitHub remote
+   git remote add origin https://github.com/balaji340/chatbot.git
+
+Step 8: Push to GitHub
+   git push -u origin main
+
+When prompted for credentials:
+   Username: balaji340
+   Password: Your GitHub Personal Access Token (from https://github.com/settings/tokens)
+
+================================================================================
+                    GET GITHUB PERSONAL ACCESS TOKEN
+================================================================================
+
+You need a token (NOT your GitHub password):
+
+1. Go to: https://github.com/settings/tokens
+2. Click "Generate new token (classic)"
+3. Token name: "Chatbot"
+4. Expiration: 90 days
+5. Check: ☑ repo (full control of private repositories)
+6. Click "Generate token"
+7. COPY the token (you'll only see it once!)
+8. Use this token as your password when git asks
+
+================================================================================
+                    EXPECTED SUCCESS OUTPUT
+================================================================================
+
+After running git push, you should see:
+
+   Enumerating objects: XX, done.
+   Counting objects: 100% (XX/XX), done.
+   Delta compression using up to 8 threads
+   Compressing objects: 100% (XX/XX), done.
+   Writing objects: 100% (XX/XX), [size] | [speed], done.
+   Total XX (delta X), reused 0 (delta 0), pack-reused 0
+   To https://github.com/balaji340/chatbot.git
+    * [new branch]      main -> main
+   Branch 'main' set up to track remote branch 'main' from 'origin'.
+
+This means SUCCESS! ✅
+
+================================================================================
+                    THEN VISIT
+================================================================================
+
+https://github.com/balaji340/chatbot
+
+You should see all your project files there!
+
+================================================================================
